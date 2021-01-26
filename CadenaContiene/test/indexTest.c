@@ -1,7 +1,19 @@
-char cadena1[] = "gentrificacion";
-char cadena2[] = "gente";
-buscar(cadena1, cadena2), 0
+#include <stdio.h>
+#include <string.h>
 
-char cadena1[] = "almacenes";
-char cadena2[] = "alma";
-buscar(cadena1, cadena2), 1
+int main (void) {
+    char cadena1 [] = "gentrificacion" ;
+    char cadena2 [] = "gente" ;
+   printf ("Introduce una cadena");
+   scanf ("% s", cadena1);
+   printf (" Introduce otra cadena");
+   scanf ("% s", cadena2);
+    
+    if (strstr (cadena1, cadena2)! = NULL) 
+    {
+        printf ("Existe% s dentro de %s", cadena2, cadena1);
+    } más {
+        printf (" No existe% s dentro de %s ", cadena2, cadena1);
+    }
+ 
+}
